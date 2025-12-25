@@ -66,5 +66,13 @@ The model produces a premium rate table:
 
 The generated table is exported to Excel and saved in a local directory.
 
+## Technologies Used
+
+- Python
+- Pandas
+- Numpy
+- Scipy
+- Joblib
+
 ## Author
 **Shitikshu Vyas**

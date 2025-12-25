@@ -1,17 +1,8 @@
-# Life Insurance Pricing Mode
+# Life Insurance Pricing Model
 
-This project demonstrates an actuarial life insurance pricing engine built in Python. It replicates the core structure and thinking behind professional insurance pricing models while using a simplistic approach in calculating the premiums. e
+This project demonstrates an actuarial life insurance pricing model built in Python. It replicates the core structure and thinking behind professional insurance pricing models while using a simplistic approach in calculating the premiums. 
 
 The model calculates policy premiums such that the expected profit margin meets a target level, using numerical solving techniques and actuarial-style cashflow projections.
-
-## Project Objectives
-
-- Simulate realistic life insurance pricing mechanics  
-- Apply actuarial cashflow logic  
-- Compute Present Values & Profit Margins  
-- Use numerical root solving (Goal Seek equivalent)  
-- Demonstrate parallel computation for scale  
-- Export results into a usable pricing table
 
 ## Model Overview
 
@@ -21,8 +12,6 @@ The model prices policies based on:
 - Policy Term
 - Target Profit Margin
 - Premium (solved variable)
-
-For each combination of age and term, the model projects:
 
 ### Key actuarial components
 - Survival & Inforce Projection  
@@ -47,9 +36,9 @@ Mortality | Simple increasing qₓ curve
 Lapses | Declining lapse rate model  
 Cashflows | Annual projected values  
 Discounting | Deterministic discount factor  
-Profit Targeting | Root solving (`scipy.optimize.root`)  
+Profit Targeting | Root solving 
 Performance | Parallel computation via Joblib  
-Output | 2-way Premium Table (Age × Term)  
+Output | Premium Table (Age × Term)  
 
 ## Data Pipeline
 
@@ -78,4 +67,4 @@ The model produces a premium rate table:
 The generated table is exported to Excel and saved in a local directory.
 
 ## Author
-Shitikshu Vyas
+**Shitikshu Vyas**
